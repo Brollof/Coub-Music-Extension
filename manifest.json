@@ -1,0 +1,22 @@
+{
+  "name": "Coub Music Finder",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Find Coub music simply by opening Coub url.",
+
+  "content_scripts": [
+    {
+      "matches": ["https://coub.com/view/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "coub.png"
+  },
+
+  "icons": {
+    "48": "coub.png",
+    "96": "coub.png"
+  }
+}
