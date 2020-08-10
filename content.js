@@ -1,7 +1,7 @@
-console.log("Coub Music Finder is running")
+console.log("Coub Music Finder is running");
 
-let authorTag = document.getElementsByClassName("musicAuthor")[0]
-let titleTag = document.getElementsByClassName("musicTitle")[0]
+let authorTag = document.getElementsByClassName("musicAuthor")[0];
+let titleTag = document.getElementsByClassName("musicTitle")[0];
 let author = "", title = "";
 
 if (authorTag) {
@@ -15,13 +15,13 @@ if (titleTag) {
 let songString = `${author} - ${title}`;
 console.log(`Song: ${songString}`);
 
-let desc = document.getElementsByClassName("coub__description")[0]
+let desc = document.getElementsByClassName("coub__description")[0];
 let songTag = document.createElement("a");
 
 songTag.className = "mySongTag"; // for debug purposes only
 
 if (!author && !title) {
-  songTag.innerText = "No title :("
+  songTag.innerText = "No title :(";
 } else {
   songTag.innerText = songString;
   songTag.href = `https://www.youtube.com/results?search_query=${songString}`;
